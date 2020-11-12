@@ -1,0 +1,61 @@
+@import '../../assets/style/variables';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__jobs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 380px) {
+  .content {
+    &__jobs {
+      justify-content: space-evenly;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+
+    &__jobs {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      margin-top: 1.5rem;
+      width: 60%;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .content {
+    &__jobs {
+      width: 30%;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .content {
+    &__jobs {
+      width: 25%;
+    }
+  }
+}

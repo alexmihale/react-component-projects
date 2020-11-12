@@ -1,0 +1,67 @@
+@import '../../assets/style/variables';
+
+.jobtitle {
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: left;
+
+    &-border {
+      width: 100%;
+      background-color: $color-main;
+      height: 2px;
+      margin: auto;
+    }
+    &-title {
+      font-family: 'Courier Prime';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 1.6875rem;
+      text-transform: uppercase;
+      color: $black;
+      margin-top: 0.95rem;
+      margin-bottom: 0;
+
+      &--active {
+        font-family: 'Courier Prime';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 1.6875rem;
+        text-transform: uppercase;
+        color: $color-main;
+        margin-top: 0.95rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .jobtitle {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      &-border {
+        width: 2px;
+        height: 80%;
+        margin-top: 0.65rem;
+        margin-right: 1.5625rem;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

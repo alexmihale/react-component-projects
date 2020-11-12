@@ -1,0 +1,48 @@
+@import '../../assets/style/variables';
+
+.experience {
+  text-align: center;
+  margin: 1.5rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-title {
+      font-style: normal;
+      font-weight: $font-bolder;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      color: $black;
+      margin-bottom: 0;
+    }
+
+    &-border {
+      height: 5px;
+      background-color: $color-main;
+      width: 40%;
+      margin: auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

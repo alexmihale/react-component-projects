@@ -1,0 +1,131 @@
+@import '../../assets/style/variables';
+
+.description {
+  &__container {
+    margin-top: 3rem;
+  }
+
+  &__header {
+    &-title {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 1.9375rem;
+      color: $black;
+      text-align: left;
+    }
+    &-time {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      text-align: left;
+      color: rgba(116, 115, 115, 0.65);
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+
+    &-paragraph {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 1.5rem;
+
+      &-svg {
+        flex-shrink: 0;
+        width: 0.9375rem;
+        height: 0.9375rem;
+        background-repeat: no-repeat;
+        background-image: url('../../assets/img/fast-forward\ 1.svg');
+        margin-right: 1.5625rem;
+      }
+      &-text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.125rem;
+        display: flex;
+        align-items: center;
+        color: $black;
+        text-align: left;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    &-button {
+      background: $color-main;
+      border-radius: 25px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.125rem;
+      line-height: 1.4375rem;
+      text-align: center;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 13.33rem;
+      height: 3rem;
+      margin-top: 2rem;
+      text-decoration: none;
+
+      &-text {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 530px) {
+  .description {
+    &__footer {
+      &-button {
+        // width: 30%;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .description {
+    &__header {
+      margin-left: 2.5rem;
+    }
+    &__footer {
+      &-button {
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .description {
+    &__footer {
+      &-button {
+        // width: 20%;
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .description {
+    &__footer {
+      &-button {
+        // width: 15%;
+      }
+    }
+  }
+}
