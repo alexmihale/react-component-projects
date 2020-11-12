@@ -1,0 +1,42 @@
+@import '../../assets/style/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: $clr-white;
+  width: 90vw;
+  margin: 5rem auto;
+  padding: 2.5rem 2rem;
+  border-radius: 0.25rem;
+  max-width: $fixed-width;
+
+  &__header {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: capitalize;
+    max-width: 250px;
+    margin-right: 2rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    flex-direction: row;
+
+    &__header {
+      text-align: left;
+    }
+    &__body {
+      margin-top: 0;
+    }
+  }
+}
